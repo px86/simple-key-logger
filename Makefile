@@ -1,12 +1,12 @@
 CC := gcc
-CFLAGS := -g -Wall
-BIN_NAME := skeylogger
-OBJS := skeylogger.o key_util.o options.o config.o
+CFLAGS := -Wall -Wpedantic
+OBJS := key_util.o options.o config.o
 
-all: $(BIN_NAME)
+skeylogger: src/skeylogger.c $(OBJS)
+	$(CC) $(CFLAGS) -o $@ $^
 
-$(BIN_NAME): $(OBJS)
-	gcc $(CFLAGS) $(OBJS) -o $(BIN_NAME)
+%.o: src/%.c src/include/%.h
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f *.o $(BIN_NAME)
+	rm -f *.o skeylogger

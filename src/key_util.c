@@ -1,7 +1,7 @@
 #include <linux/input.h>
 
-#include "util.h"
-#include "key_util.h"
+#include "include/util.h"
+#include "include/key_util.h"
 
 #define UK UNKNOWN_KEY
 

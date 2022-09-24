@@ -8,10 +8,10 @@
 #include <unistd.h>  // daemon, close
 #include <linux/input.h>
 
-#include "key_util.h"
-#include "util.h"
-#include "options.h"
-#include "config.h"
+#include "include/key_util.h"
+#include "include/util.h"
+#include "include/options.h"
+#include "include/config.h"
 
 #define KEY_RELEASE 0
 #define KEY_PRESS 1

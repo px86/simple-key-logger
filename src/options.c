@@ -5,8 +5,8 @@
 #include <fcntl.h>  // open
 #include <unistd.h> // read
 
-#include "options.h"
-#include "util.h"
+#include "include/options.h"
+#include "include/util.h"
 
 #define VERSION "0.0.1"
 
