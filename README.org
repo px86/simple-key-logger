@@ -1,0 +1,32 @@
+#+TITLE: SKeyLogger
+#+AUTHOR: Pushkar Raj
+#+EMAIL: px86@protonmail.com
+#+DATE: [2022-09-24 Sat]
+
+According to [[https://github.com/gsingh93][gsingh93]], the original author of SKeyLogger:
+
+#+begin_quote
+SKeylogger is a simple keylogger. I had previously been using a few other open source keyloggers, but they stopped working when I upgraded my operating system. I tried to look through the code of those keyloggers, but it was undocumented, messy, and complex. I decided to make my own highly documented and very simple keylogger.
+#+end_quote
+
+
+* Compilation
+
+#+begin_src shell
+make
+#+end_src
+
+
+* Usage
+
+Must be run as =root= user.
+
+#+begin_src shell
+Usage: skeylogger [OPTION]
+Logs pressed keys
+
+  -h, --help            Displays this help message
+  -v, --version         Displays version information
+  -l, --logfile         Path to the logfile
+  -d, --device          Path to device file (/dev/input/eventX)
+#+end_src
